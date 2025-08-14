@@ -31,7 +31,7 @@ import type {Greeting} from '../types/Greeting';
  * @param {string} [greeting] If not given, defaults to {@link defaultGreeting}.
  * @return {Greeting}
  * @group Library
- * @category Internal
+ * @category API
  */
 export const greet = (greeting?: Greeting): Greeting => {
   return greeting ?? defaultGreeting;
