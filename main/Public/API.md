@@ -10,10 +10,10 @@ Public API.
 
 ## Library
 
+### API
+
+- [greet](../API/API.greet.md)
+
 ### Types
 
 - [Greeting](../Types/API.Greeting.md)
-
-### Internal
-
-- [greet](../Internal/API.greet.md)

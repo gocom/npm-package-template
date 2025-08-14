@@ -8,7 +8,7 @@
 
 > **greet**(`greeting?`): `string`
 
-Defined in: [library/Greet.ts:36](https://github.com/gocom/npm-package-template/blob/e17997b46009a9f8d94a249b752a2e398aff7b51/src/library/Greet.ts#L36)
+Defined in: [library/Greet.ts:36](https://github.com/gocom/npm-package-template/blob/6080e5ca96bbb84c50f68fbf83b73c35bc0a2bea/src/library/Greet.ts#L36)
 
 Returns a greeting.
 
@@ -18,7 +18,7 @@ Returns a greeting.
 
 `string`
 
-If not given, defaults to [defaultGreeting](Private.defaultGreeting.md).
+If not given, defaults to [defaultGreeting](../Internal/Private.defaultGreeting.md).
 
 ## Returns
 
