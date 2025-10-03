@@ -23,15 +23,13 @@ jobs:
         with:
           node-version: 22
 
-      - name: Get version
-        id: version
+      - name: Get metadata
+        id: meta
         run: |
-          echo "contents<<VERSIONEOF" >> $GITHUB_OUTPUT
-          echo "$GITHUB_REF" | cut -d / -f 3 >> $GITHUB_OUTPUT
-          echo "VERSIONEOF" >> $GITHUB_OUTPUT
+          echo "version=$(basename "$GITHUB_REF")" >> $GITHUB_OUTPUT
 
       - name: Pre-publish
-        run: make pre-publish VERSION=${{ steps.version.outputs.contents }}
+        run: make pre-publish VERSION=${{ steps.meta.outputs.version }}
 
       - name: Build
         run: make build
@@ -42,3 +40,4 @@ jobs:
         run: |
           npm config set "//registry.npmjs.org/:_authToken" "$NPM_TOKEN"
           npm publish --provenance --access public
+        if: ${{ !!env.NPM_TOKEN }}

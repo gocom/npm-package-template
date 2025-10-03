@@ -24,8 +24,8 @@
   },
   "license": "MIT",
   "description": "Extract release notes from CHANGELOG.md",
-  "homepage": "https://github.com/gocom/changelog",
-  "bugs": "https://github.com/gocom/changelog/issues",
+  "homepage": "https://github.com/gocom/npm-package-template",
+  "bugs": "https://github.com/gocom/npm-package-template/issues",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gocom/changelog.git"
