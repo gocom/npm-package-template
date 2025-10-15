@@ -8,6 +8,6 @@
 
 > `const` **defaultGreeting**: [`Greeting`](../Types/API.Greeting.md) = `'Hello world!'`
 
-Defined in: [library/Greet.ts:46](https://github.com/gocom/npm-package-template/blob/7f151d520c7dec96868e863ebb8e761af5cc2b8f/src/library/Greet.ts#L46)
+Defined in: [library/Greet.ts:46](https://github.com/gocom/npm-package-template/blob/e406d5a1dee0db5b5989990c2a14933d69dcbd8b/src/library/Greet.ts#L46)
 
 Default greeting.
