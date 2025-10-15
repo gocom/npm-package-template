@@ -7,6 +7,7 @@ release.
 
 * Support trusted publishing from GitHub Actions CI.
 * Update Node.js from 22 to 24.
+* Update `SonarSource/sonarqube-scan-action` action to version 6.
 
 ## 0.1.0
 
