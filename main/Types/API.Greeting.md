@@ -8,7 +8,7 @@
 
 > **Greeting** = `string`
 
-Defined in: [types/Greeting.ts:38](https://github.com/gocom/npm-package-template/blob/b11326d3bd9c2af161930557a08fc5983e10d18d/src/types/Greeting.ts#L38)
+Defined in: [types/Greeting.ts:38](https://github.com/gocom/npm-package-template/blob/b26ddab6aa5e78f36dafda1d7b8aeede17ee8dbd/src/types/Greeting.ts#L38)
 
 Greeting.
 
