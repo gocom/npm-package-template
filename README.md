@@ -16,7 +16,7 @@ npm Package Template
 To set up a repository using the template:
 
 * [ ] Update [package.json](./package.json) with your package name, URLs and other details.
-* [ ] Add your `NPM_TOKEN` as a variable to the repository's or the organization's secrets. If `NPM_TOKEN` is omitted, CI publishing is disabled.
+* [ ] If you can not use [trusted publishing](https://docs.npmjs.com/trusted-publishers), you can optionally add your `NPM_TOKEN` as a secret to the repository's or the organization's secrets.
 * [ ] Add your package's typescript code to under the **src** directory. Default entrypoint is [src/index.ts](./src/index.ts), which exports will become part of the publicly exported API. The [src/internal.ts](./src/internal.ts) can be used to export internal code paths to the generated API documentation.
 * [ ] Run tests using the instructions found in [CONTRIBUTING.md](./CONTRIBUTING.md).
 * [ ] Add your license and copyrights to [LICENSE](./LICENSE).

@@ -23,6 +23,13 @@ jobs:
         with:
           node-version: 22
 
+      - name: Configure token
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm config set "//registry.npmjs.org/:_authToken" "$NPM_TOKEN"
+        if: ${{ !!env.NPM_TOKEN }}
+
       - name: Get metadata
         id: meta
         run: |
@@ -35,9 +42,4 @@ jobs:
         run: make build
 
       - name: Publish
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          npm config set "//registry.npmjs.org/:_authToken" "$NPM_TOKEN"
-          npm publish --provenance --access public
-        if: ${{ !!env.NPM_TOKEN }}
+        run: npm publish --provenance --access public
